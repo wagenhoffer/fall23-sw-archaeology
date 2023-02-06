@@ -13,7 +13,7 @@ Demo: http://albumy.helloflask.com
 clone:
 ```
 $ git clone #YOUR_FORKED_REPO
-$ cd albumy
+$ cd #FORKED_DIR_NAME
 ```
 create & activate virtual env then install dependency:
 
