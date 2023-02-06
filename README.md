@@ -12,7 +12,7 @@ Demo: http://albumy.helloflask.com
 
 clone:
 ```
-$ git clone https://github.com/greyli/albumy.git
+$ git clone #YOUR_FORKED_REPO
 $ cd albumy
 ```
 create & activate virtual env then install dependency:
