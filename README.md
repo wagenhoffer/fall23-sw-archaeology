@@ -11,11 +11,11 @@ Demo: http://albumy.helloflask.com
 ## Installation
 
 codespaces:
-```
+
 1. Open the code tab
 2. Select codespaces
 3. Select codespace on main 
-```
+
 create & activate virtual env then install dependency:
 
 with venv/virtualenv + pip:
