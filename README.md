@@ -10,20 +10,23 @@ Demo: http://albumy.helloflask.com
 
 ## Installation
 
-clone:
+codespaces:
 ```
-$ git clone #YOUR_FORKED_REPO
-$ cd #FORKED_DIR_NAME
+1. Open the code tab
+2. Select codespaces
+3. Select codespace on main 
 ```
 create & activate virtual env then install dependency:
 
 with venv/virtualenv + pip:
 ```
+# hint: you can find your python version with the command: $ python --version
+
 $ python -m venv env  # use `virtualenv env` for Python2, use `python3 ...` for Python3 on Linux & macOS
 $ source env/bin/activate  # use `env\Scripts\activate` on Windows
 $ pip install -r requirements.txt # OR pip3 install -r requirements.txt
 ```
-or with Pipenv:
+or with Pipenv: # do this only if you tried venv/virtualenv + pip and it did not work
 ```
 $ pipenv install --dev
 $ pipenv shell
