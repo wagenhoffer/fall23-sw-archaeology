@@ -14,7 +14,7 @@ codespaces:
 
 1. Open the code tab
 2. Select codespaces
-3. Select codespace on main 
+3. Select Create codespace on main 
 
 create & activate virtual env then install dependency:
 
