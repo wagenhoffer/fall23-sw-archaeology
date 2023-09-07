@@ -26,7 +26,7 @@ $ python -m venv env  # use `virtualenv env` for Python2, use `python3 ...` for 
 $ source env/bin/activate  # use `env\Scripts\activate` on Windows
 $ pip install -r requirements.txt # OR pip3 install -r requirements.txt
 ```
-or with Pipenv: # do this only if you tried venv/virtualenv + pip and it did not work
+or with Pipenv:  (do this only if you tried venv/virtualenv + pip and it did not work)
 ```
 $ pipenv install --dev
 $ pipenv shell
