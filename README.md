@@ -10,11 +10,11 @@ Demo: http://albumy.helloflask.com
 
 ## Installation
 
-codespaces:
-
-1. Open the code tab
-2. Select codespaces
-3. Select Create codespace on main 
+clone:
+```
+$ git clone #YOUR_FORKED_REPO
+$ cd #FORKED_DIR_NAME
+```
 
 create & activate virtual env then install dependency:
 
