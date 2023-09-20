@@ -342,6 +342,7 @@ def delete_photo(photo_id):
         abort(403)
 
     db.session.delete(photo)
+    db.session.commit()
     flash('Photo deleted.', 'info')
 
     photo_n = Photo.query.with_parent(photo.author).filter(Photo.id < photo_id).order_by(Photo.id.desc()).first()
