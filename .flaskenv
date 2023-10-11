@@ -1,2 +1,3 @@
-FLASK_APP=albumy
+FLASK_APP=bum
 FLASK_ENV=development
+
