@@ -5,6 +5,7 @@
     :copyright: © 2018 Grey Li <withlihui@gmail.com>
     :license: MIT, see LICENSE for more details.
 """
+#doodo garbo
 import os
 
 from flask import render_template, flash, redirect, url_for, current_app, \
@@ -362,6 +363,7 @@ def delete_comment(comment_id):
             and not current_user.can('MODERATE'):
         abort(403)
     db.session.delete(comment)
+    db.session.commit()
     flash('Comment deleted.', 'info')
     return redirect(url_for('.show_photo', photo_id=comment.photo_id))
 
