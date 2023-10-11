@@ -298,6 +298,7 @@ def new_tag(photo_id):
                 tag = Tag(name=name)
                 db.session.add(tag)
                 db.session.commit()
+                print('hello')
             if tag not in photo.tags:
                 photo.tags.append(tag)
                 db.session.commit()
