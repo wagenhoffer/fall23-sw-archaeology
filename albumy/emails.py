@@ -5,7 +5,7 @@
     :copyright: © 2018 Grey Li <withlihui@gmail.com>
     :license: MIT, see LICENSE for more details.
 """
-from threading import Thread
+# from threading import Thread
 
 from flask import current_app, render_template
 from flask_mail import Message
