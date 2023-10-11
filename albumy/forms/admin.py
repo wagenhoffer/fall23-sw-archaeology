@@ -12,7 +12,7 @@ from wtforms.validators import DataRequired, Length, Email
 from albumy.forms.user import EditProfileForm
 from albumy.models import User, Role
 
-
+# add comment - Harkaran 
 class EditProfileAdminForm(EditProfileForm):
     email = StringField('Email', validators=[DataRequired(), Length(1, 254), Email()])
     role = SelectField('Role', coerce=int)
