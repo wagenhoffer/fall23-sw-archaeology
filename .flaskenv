@@ -1,2 +1,4 @@
 FLASK_APP=bum
 FLASK_ENV=development
+FLASK_ENV_1=somethingelse
+FLASK_ENV_2=somethingelse2
