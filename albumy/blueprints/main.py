@@ -5,6 +5,7 @@
     :copyright: © 2018 Grey Li <withlihui@gmail.com>
     :license: MIT, see LICENSE for more details.
 """
+#doodo garbo
 import os
 
 from flask import render_template, flash, redirect, url_for, current_app, \
