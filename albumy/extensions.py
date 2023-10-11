@@ -5,6 +5,9 @@
     :copyright: © 2018 Grey Li <withlihui@gmail.com>
     :license: MIT, see LICENSE for more details.
 """
+
+# I accidentally deleted the main py file. Idk how I even did that. I think my debugger took it off the menu XD
+# All I added was this comment. 
 from flask_avatars import Avatars
 from flask_bootstrap import Bootstrap
 from flask_dropzone import Dropzone
