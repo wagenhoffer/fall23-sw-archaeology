@@ -72,10 +72,8 @@ def fake_photo(count=30):
     # photos
     upload_path = current_app.config['ALBUMY_UPLOAD_PATH']
     for i in range(count):
-        print(i)
-
-        filename = 'random_%d.jpg' % i
-        r = lambda: random.randint(128, 255)
+        filename = 'fake_image_%d.jpg' % i
+        r = lambda: random.randint(0, 255)
         img = Image.new(mode='RGB', size=(800, 800), color=(r(), r(), r()))
         img.save(os.path.join(upload_path, filename))
 
