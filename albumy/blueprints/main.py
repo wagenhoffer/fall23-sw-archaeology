@@ -11,7 +11,7 @@ from flask import render_template, flash, redirect, url_for, current_app, \
     send_from_directory, request, abort, Blueprint
 from flask_login import login_required, current_user
 from sqlalchemy.sql.expression import func
-
+ 
 from albumy.decorators import confirm_required, permission_required
 from albumy.extensions import db
 from albumy.forms.main import DescriptionForm, TagForm, CommentForm
@@ -362,6 +362,7 @@ def delete_comment(comment_id):
             and not current_user.can('MODERATE'):
         abort(403)
     db.session.delete(comment)
+    db.session.commit()
     flash('Comment deleted.', 'info')
     return redirect(url_for('.show_photo', photo_id=comment.photo_id))
 
