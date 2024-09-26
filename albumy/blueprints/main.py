@@ -298,6 +298,7 @@ def new_tag(photo_id):
                 tag = Tag(name=name)
                 db.session.add(tag)
                 db.session.commit()
+                print('hello')
             if tag not in photo.tags:
                 photo.tags.append(tag)
                 db.session.commit()
@@ -362,6 +363,7 @@ def delete_comment(comment_id):
             and not current_user.can('MODERATE'):
         abort(403)
     db.session.delete(comment)
+    db.session.commit()
     flash('Comment deleted.', 'info')
     return redirect(url_for('.show_photo', photo_id=comment.photo_id))
 
